@@ -13,5 +13,5 @@ buildBucket.download_fileobj('buildFiles.zip', zipFile)
 with zipfile.ZipFile(zipFile) as myZip:
     for nm in myZip.namelist():
         obj = myZip.open(nm)
-        buildBucket.upload_fileobj(obj, nm, ExtraArgs={'ContentType': mimetypes.guess_type(nm)[0]})
-        buildBucket.Object(nm).Acl().put(ACL='public-read')
+        filesBucket.upload_fileobj(obj, nm, ExtraArgs={'ContentType': mimetypes.guess_type(nm)[0]})
+        filesBucket.Object(nm).Acl().put(ACL='public-read')
