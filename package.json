@@ -4,7 +4,7 @@
   "description": "Simple website built with AWS and React Following A Cloud Guru's Create a Serverless Portfolio with React and Node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test sspecified\" && exit 1",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
   },
