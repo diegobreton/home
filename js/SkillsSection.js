@@ -4,22 +4,22 @@ class SkillsSection extends React.Component {
   render(){
     const skills = [
       {
-        src: "images/example2.png",
+        icon: "fab fa-android fa-3x",
         title: "Android Development",
         desc: "Over 3 years of enterprise-level native Android application development in Java and Kotlin."
       },
       {
-        src: "images/example2.png",
+        icon: "fab fa-apple fa-3x",
         title: "iOS Development",
         desc: "I have developed several applications for the iOS and MacOS platforms."
       },
       {
-        src: "images/example2.png",
+        icon: "fas fa-tasks fa-3x",
         title: "Project Management",
-        desc: "I handle teams of software developers in efficient ways."
+        desc: "I handle teams of software developers organize efficiently."
       },
       {
-        src: "images/example2.png",
+        icon: "fas fa-globe fa-3x",
         title: "Web Development",
         desc: "The most up-to-date knowledge of web development tools."
       }
@@ -45,8 +45,8 @@ class Skill extends React.Component {
 
     return(
       <li>
-        <div class='skill'>
-          <div class='skill__img' ><img src={skill.src}/></div>
+      <div class='skill'>
+          <div class='skill__img' ><i class={skill.icon}/></div>
           <div class='skill__title'>{skill.title}</div>
           <div class='skill__desc'>{skill.desc}</div>
         </div>

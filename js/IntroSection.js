@@ -25,9 +25,9 @@ class SocialButtonsContainer extends React.Component{
   render(){
     return(
       <ul className='social-btn-cont' >
-        <li><i class="fab fa-linkedin fa-3x"></i></li>
-        <li><i class="fab fa-facebook-square fa-3x"></i></li>
-        <li><i class="fab fa-github-square  fa-3x"></i></li>
+        <li><a href="https://www.linkedin.com/in/diegobretonp/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+        <li><a href="https://twitter.com/bretondiego_" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+        <li><a href="https://github.com/diegobreton/" target="_blank"><i class="fab fa-github-square  fa-3x"></i></a></li>
       </ul>
     )
   }
