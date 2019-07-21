@@ -3,8 +3,8 @@
   grid-template-columns: repeat(auto-fit, minmax(470px, auto));
   grid-auto-rows: auto;
 
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 
   .intro-section__textgrid{
     display: grid;
@@ -24,13 +24,35 @@
     }
 
     .social-btn-cont{
-      color: salmon;
-      font-size: 16px;
+      font-size: 10px;
       list-style: none;
       padding: 0;
 
       grid-column-start: 1;
       grid-row-start: 3;
+
+
+      a {
+        text-decoration: none;
+        color: salmon;
+
+
+        &:hover{
+          .fab {
+            color: salmon;
+            -webkit-transition: color .25s linear;
+             -moz-transition: color .25s linear;
+             -ms-transition: color .25s linear;
+             -o-transition: color .25s linear;
+             transition: color .25s linear;
+          }
+        }
+
+        .fab {
+          color: rgb(117, 117, 117);
+          padding: 3px;
+        }
+      }
 
       li {
         display: inline-block;
@@ -50,6 +72,6 @@
   .intro-image {
     align-self: center;
     justify-self: center;
-    width: 300px;
+    width: 400px;
   }
 }
