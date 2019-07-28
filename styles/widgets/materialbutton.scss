@@ -1,0 +1,26 @@
+$muted-grey: #999;
+$purple: #8300ff;
+$white: #fff;
+$grey: #757575;
+
+$base-shadow: rgba(0, 0, 0, 0.12);
+$purple-shadow-from: rgba(131, 0, 255, 0.42);
+$purple-shadow-to: rgba(131, 0, 255, 0.2);
+$purple-box-shadow:  0 14px 26px -12px $purple-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $purple-shadow-to;
+
+.ninja-button {
+    padding: .50rem 1.25rem;
+    text-transform: uppercase;
+    background: $grey;
+    border: none;
+    color: $white;
+    font-weight: 200;
+    font-size: .75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover {
+        opacity: 0.8;
+        box-shadow: $purple-box-shadow;
+    }
+}

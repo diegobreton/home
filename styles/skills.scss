@@ -10,9 +10,10 @@
   list-style: none;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin: 0;
+  padding-left: 0;
+  margin-bottom: 0;
 
-  .skill{
+  .skill {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: minmax(auto, 1fr) 2fr;

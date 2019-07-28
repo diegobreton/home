@@ -37,8 +37,8 @@ class IntroInfoButtonsContainer extends React.Component {
   render(){
     return(
       <ul className='info-btn-cont' >
-        <li><button type='button'>Contact me</button></li>
-        <li><button type='button'>Contact me</button></li>
+        <li><button className='ninja-button' type='button'>Contact me</button></li>
+        <li><button className='ninja-button' type='button'>Download C.V.</button></li>
       </ul>
     )
   }
